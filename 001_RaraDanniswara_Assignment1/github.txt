@@ -1,5 +1,5 @@
 Link github: 
-https://github.com/LiliAmber/OCBC-H8/tree/main/assignment_1
+https://github.com/LiliAmber/OCBC-H8/tree/main/001_RaraDanniswara_Assignment1
 
 - jawaban dari soal 1 - 6 ada di file Rara_001_Assignment1.
 - semua file dijalankan dengan mono (ctrl + opt + n)
