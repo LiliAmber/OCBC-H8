@@ -1,0 +1,15 @@
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 1/sampleInput/obj/Debug/net5.0/sampleInput.csproj.AssemblyReference.cache
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 1/sampleInput/obj/Debug/net5.0/sampleInput.GeneratedMSBuildEditorConfig.editorconfig
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 1/sampleInput/obj/Debug/net5.0/sampleInput.AssemblyInfoInputs.cache
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 1/sampleInput/obj/Debug/net5.0/sampleInput.AssemblyInfo.cs
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 1/sampleInput/obj/Debug/net5.0/sampleInput.csproj.CoreCompileInputs.cache
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 1/sampleInput/bin/Debug/net5.0/sampleInput.deps.json
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 1/sampleInput/bin/Debug/net5.0/sampleInput.runtimeconfig.json
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 1/sampleInput/bin/Debug/net5.0/sampleInput.runtimeconfig.dev.json
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 1/sampleInput/bin/Debug/net5.0/sampleInput.dll
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 1/sampleInput/bin/Debug/net5.0/ref/sampleInput.dll
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 1/sampleInput/bin/Debug/net5.0/sampleInput.pdb
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 1/sampleInput/obj/Debug/net5.0/sampleInput.dll
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 1/sampleInput/obj/Debug/net5.0/ref/sampleInput.dll
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 1/sampleInput/obj/Debug/net5.0/sampleInput.pdb
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 1/sampleInput/obj/Debug/net5.0/sampleInput.genruntimeconfig.cache

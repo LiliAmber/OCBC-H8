@@ -1,0 +1,15 @@
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 1/heloo-cs/bin/Debug/net5.0/heloo-cs.deps.json
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 1/heloo-cs/bin/Debug/net5.0/heloo-cs.runtimeconfig.json
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 1/heloo-cs/bin/Debug/net5.0/heloo-cs.runtimeconfig.dev.json
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 1/heloo-cs/bin/Debug/net5.0/heloo-cs.dll
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 1/heloo-cs/bin/Debug/net5.0/ref/heloo-cs.dll
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 1/heloo-cs/bin/Debug/net5.0/heloo-cs.pdb
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 1/heloo-cs/obj/Debug/net5.0/heloo-cs.csproj.AssemblyReference.cache
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 1/heloo-cs/obj/Debug/net5.0/heloo-cs.GeneratedMSBuildEditorConfig.editorconfig
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 1/heloo-cs/obj/Debug/net5.0/heloo-cs.AssemblyInfoInputs.cache
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 1/heloo-cs/obj/Debug/net5.0/heloo-cs.AssemblyInfo.cs
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 1/heloo-cs/obj/Debug/net5.0/heloo-cs.csproj.CoreCompileInputs.cache
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 1/heloo-cs/obj/Debug/net5.0/heloo-cs.dll
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 1/heloo-cs/obj/Debug/net5.0/ref/heloo-cs.dll
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 1/heloo-cs/obj/Debug/net5.0/heloo-cs.pdb
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 1/heloo-cs/obj/Debug/net5.0/heloo-cs.genruntimeconfig.cache

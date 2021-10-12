@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "heloo-cs/1.0.0": {
+        "runtime": {
+          "heloo-cs.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "heloo-cs/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
