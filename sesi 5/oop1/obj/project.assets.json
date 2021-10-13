@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 1/heloo-cs/heloo-cs.csproj",
-      "projectName": "heloo-cs",
-      "projectPath": "/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 1/heloo-cs/heloo-cs.csproj",
+      "projectUniqueName": "/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 5/oop1/oop1.csproj",
+      "projectName": "oop1",
+      "projectPath": "/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 5/oop1/oop1.csproj",
       "packagesPath": "/Users/raradanniswaramusin/.nuget/packages/",
-      "outputPath": "/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 1/heloo-cs/obj/",
+      "outputPath": "/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 5/oop1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/raradanniswaramusin/.nuget/NuGet/NuGet.Config"

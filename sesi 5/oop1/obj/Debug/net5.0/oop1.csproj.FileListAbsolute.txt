@@ -1,0 +1,15 @@
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 5/oop1/obj/Debug/net5.0/oop1.csproj.AssemblyReference.cache
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 5/oop1/obj/Debug/net5.0/oop1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 5/oop1/obj/Debug/net5.0/oop1.AssemblyInfoInputs.cache
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 5/oop1/obj/Debug/net5.0/oop1.AssemblyInfo.cs
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 5/oop1/obj/Debug/net5.0/oop1.csproj.CoreCompileInputs.cache
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 5/oop1/bin/Debug/net5.0/oop1.deps.json
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 5/oop1/bin/Debug/net5.0/oop1.runtimeconfig.json
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 5/oop1/bin/Debug/net5.0/oop1.runtimeconfig.dev.json
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 5/oop1/bin/Debug/net5.0/oop1.dll
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 5/oop1/bin/Debug/net5.0/ref/oop1.dll
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 5/oop1/bin/Debug/net5.0/oop1.pdb
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 5/oop1/obj/Debug/net5.0/oop1.dll
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 5/oop1/obj/Debug/net5.0/ref/oop1.dll
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 5/oop1/obj/Debug/net5.0/oop1.pdb
+/Users/raradanniswaramusin/Documents/intern-OCBC/BackEnd Dev1/sesi 5/oop1/obj/Debug/net5.0/oop1.genruntimeconfig.cache
