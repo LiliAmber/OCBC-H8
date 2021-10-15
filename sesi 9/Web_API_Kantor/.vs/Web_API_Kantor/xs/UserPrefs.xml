@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{20D2A8E9-A9AB-4F25-BF82-3049D239EC0D}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Web_API_Kantor/appsettings.json">
+    <Files>
+      <File FileName="Web_API_Kantor/Models/EmployeeItem.cs" Line="19" Column="36" />
+      <File FileName="Web_API_Kantor/Models/EmployeeContext.cs" Line="73" Column="76" />
+      <File FileName="Web_API_Kantor/Properties/launchSettings.json" Line="2" Column="67" />
+      <File FileName="Web_API_Kantor/Controllers/HomeController.cs" Line="41" Column="29" />
+      <File FileName="Web_API_Kantor/appsettings.json" Line="3" Column="96" />
+      <File FileName="Web_API_Kantor/appsettings.Development.json" Line="1" Column="1" />
+      <File FileName="Web_API_Kantor/Startup.cs" Line="53" Column="44" />
+      <File FileName="Web_API_Kantor/Program.cs" Line="16" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Web_API_Kantor" expanded="True">
+            <Node name="Web_API_Kantor" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="appsettings.json" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Web__API__Kantor PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

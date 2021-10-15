@@ -1,0 +1,65 @@
+--[A]
+USE master
+GO
+IF NOT EXISTS (
+ SELECT name
+ FROM sys.databases
+ WHERE name = N'DB_STAFF'
+)
+ CREATE DATABASE [DB_STAFF];
+GO
+
+-- [B]
+IF OBJECT_ID('dbo.DATA_STAFF', 'U') IS NOT NULL
+ DROP TABLE dbo.DATA_STAFF;
+GO
+-- Create the table in the specified schema
+CREATE TABLE dbo.DATA_STAFF
+(
+ NIK int NOT NULL PRIMARY KEY, -- primary key column
+ Nama nvarchar(50) NOT NULL,
+ Alamat nvarchar(200) NOT NULL,
+ Handphone NVARCHAR(15) not NULL,
+);
+GO
+
+--[C, D]
+INSERT INTO dbo.DATA_STAFF
+ ([NIK], [Nama], [Alamat], [Handphone])
+VALUES
+ ( 1, N'Orlando', N'Australia', N'001001'),
+ ( 2, N'Keith', N'India', N'001002'),
+ ( 3, N'Donna', N'Germany', N'001003'),
+ ( 4, N'Janet', N'United States', N'001004'),
+ ( 5, N'Janetta', N'United Kingdom', N'001005')
+GO
+
+--[E]
+ALTER TABLE DATA_STAFF ADD Joindate date;
+
+INSERT INTO DATA_STAFF
+ ([NIK], [Nama], [Alamat], [Handphone], [Joindate])
+VALUES
+ ( 6, N'Jacob', N'United Kingdom', N'001006', '2021-10-13');
+GO
+
+--[F]
+SELECT TOP 2 * FROM DATA_STAFF ;
+
+--[G]
+SELECT TOP 3 * FROM DATA_STAFF ;
+
+--[H]
+IF OBJECT_ID('dbo.staffOutSource', 'U') IS NOT NULL
+ DROP TABLE dbo.staffOutSource;
+GO
+-- Create the table in the specified schema
+CREATE TABLE dbo.staffOutSource
+(
+ NIK int NOT NULL PRIMARY KEY, -- primary key column
+ Nama nvarchar(50) NOT NULL,
+ Alamat nvarchar(200) NOT NULL,
+ Handphone NVARCHAR(15) not NULL,
+ Joindate DATE
+);
+GO
