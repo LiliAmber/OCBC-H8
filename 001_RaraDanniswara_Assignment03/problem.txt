@@ -1,0 +1,2 @@
+untuk assignment ke 3 saya mengalami problem dalam membuat koneksi database MySQL ke MoviesController.
+Screen Capture error saya sertakan pada folder assets. pada folder MoviesSqlite saya mengerjakan assignment 3 dengan menggunakan database sqlite.
