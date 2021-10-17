@@ -69,4 +69,3 @@
 /Users/raradanniswaramusin/Desktop/intern-OCBC/BackEnd Dev1/sesi 10/TodoAppJWT/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /Users/raradanniswaramusin/Desktop/intern-OCBC/BackEnd Dev1/sesi 10/TodoAppJWT/bin/Debug/net5.0/Microsoft.IdentityModel.Tokens.dll
 /Users/raradanniswaramusin/Desktop/intern-OCBC/BackEnd Dev1/sesi 10/TodoAppJWT/bin/Debug/net5.0/System.IdentityModel.Tokens.Jwt.dll
-/Users/raradanniswaramusin/Desktop/intern-OCBC/BackEnd Dev1/sesi 10/TodoAppJWT/obj/Debug/net5.0/TodoAppJWT.csproj.CopyComplete
