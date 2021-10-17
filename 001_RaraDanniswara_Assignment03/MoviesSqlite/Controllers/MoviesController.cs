@@ -1,5 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 using MoviesSqlite.Data;
@@ -9,6 +11,8 @@ namespace MoviesSqlite.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    //==auth process==
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class MoviesSqliteController : ControllerBase
     {
         

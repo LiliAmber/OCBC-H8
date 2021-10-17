@@ -1,2 +1,19 @@
 untuk assignment ke 3 saya mengalami problem dalam membuat koneksi database MySQL ke MoviesController.
 Screen Capture error saya sertakan pada folder assets. pada folder MoviesSqlite saya mengerjakan assignment 3 dengan menggunakan database sqlite.
+
+Untuk Login(Email & Password Required): 
+{
+    "Email": "admin@mail.com",
+    "Password": "Password12345!"
+}
+
+Untuk Register(Email, Username & Password Required)
+ex:
+{
+    "username" : "admin",
+    "email": "admin@mail.com",
+    "password": "Password12345!"
+}
+note:
+- Password minimal 6 character
+- Kombinasi huruf besar kecil, angka dan special char
