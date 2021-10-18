@@ -45,7 +45,6 @@ namespace MoviesSqlite.Controllers
         }
 
         [HttpGet("{id}")]
-
         public async Task<IActionResult> GetMovies(int id) 
         {
             var movies = await _context.Movies.FirstOrDefaultAsync(x => x.Id == id);
