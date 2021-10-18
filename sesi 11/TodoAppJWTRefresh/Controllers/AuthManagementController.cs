@@ -102,7 +102,7 @@ namespace TodoAppJWT.Controllers
                     new Claim(JwtRegisteredClaimNames.Sub, user.Email),
                     new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
                 }),
-                Expires = DateTime.UtcNow.AddMinutes(3), //==expired token in 30sc==
+                Expires = DateTime.UtcNow.AddSeconds(60), //==expired token in 60sc==
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
 
