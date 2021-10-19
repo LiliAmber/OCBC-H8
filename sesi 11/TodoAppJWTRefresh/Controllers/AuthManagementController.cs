@@ -71,7 +71,8 @@ namespace TodoAppJWT.Controllers
                 if(isCreated.Succeeded) 
                 {
                     var jwtToken = await GenerateJwtToken(newUser);
-                    return Ok(jwtToken);
+                    // return Ok(jwtToken);
+                    return Ok("Thank you for your registration");
                 } 
                 else {
                     return BadRequest(new RegistrationResponse() {

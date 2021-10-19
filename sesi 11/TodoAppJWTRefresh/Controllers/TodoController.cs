@@ -69,10 +69,11 @@ namespace TodoAppJWT.Controllers
             existItem.Description = item.Description;
             existItem.Done = item.Done;
             
-            // Implement the changes on the database level
+            //==Implement the changes on the database level==
             await _context.SaveChangesAsync();
 
-            return NoContent();
+            // return NoContent();
+            return Ok("Successfully edit selected Todo");
         }
 
         [HttpDelete("{id}")]
@@ -86,7 +87,8 @@ namespace TodoAppJWT.Controllers
             _context.Items.Remove(existItem);
             await _context.SaveChangesAsync();
 
-            return Ok(existItem);//==respon disini==
+            // return Ok(existItem);//==respon disini==
+            return Ok("Successfully delete selected Todo");
         }
     }
 }
