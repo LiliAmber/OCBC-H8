@@ -9,7 +9,7 @@ using Test_Mock.Data;
 namespace Test_Mock.Migrations
 {
     [DbContext(typeof(ApiDbContext))]
-    [Migration("20211019002741_initial migration")]
+    [Migration("20211019031539_initial migration")]
     partial class initialmigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

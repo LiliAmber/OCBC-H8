@@ -13,7 +13,6 @@
 // using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -22,16 +21,18 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using Microsoft.EntityFrameworkCore.SqlServer;
+using MySql.EntityFrameworkCore;
+using MySql.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Test_Mock.Models;
-using Test_Mock.Data;
-using Test_Mock.Services;
+using Unit_Test_Mock.Models;
+using Unit_Test_Mock.Data;
+using Unit_Test_Mock.Services;
 
-namespace Test_Mock
+
+namespace Unit_Test_Mock_MySql
 {
     public class Startup
     {
@@ -49,10 +50,10 @@ namespace Test_Mock
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Test_Mock", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Unit_Test_Mock_MySql", Version = "v1" });
             });
             #region Connection String
-            services.AddDbContext<ApiDbContext>(item => item.UseSqlServer(Configuration.GetConnectionString("myconn")));
+            services.AddDbContext<ApiDbContext>(item => item.UseMySQL(Configuration.GetConnectionString("myconn")));
             #endregion
             services.AddScoped<IEmployeeService, EmployeeService>();
         }
@@ -64,7 +65,7 @@ namespace Test_Mock
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Test_Mock v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Unit_Test_Mock_MySql v1"));
             }
 
             app.UseHttpsRedirection();

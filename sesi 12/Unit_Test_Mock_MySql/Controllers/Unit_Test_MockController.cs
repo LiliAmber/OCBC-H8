@@ -3,11 +3,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Test_Mock.Models;
-using Test_Mock.Data;
-using Test_Mock.Services; 
+using Unit_Test_Mock.Models;
+using Unit_Test_Mock.Data;
+using Unit_Test_Mock.Services; 
 
-namespace Test_Mock.Controllers
+namespace Unit_Test_Mock.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
