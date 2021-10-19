@@ -1,0 +1,173 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/raradanniswaramusin/Desktop/intern-OCBC/BackEnd Dev1/sesi 12/UnitTesting/UnitTesting.csproj": {}
+  },
+  "projects": {
+    "/Users/raradanniswaramusin/Desktop/intern-OCBC/BackEnd Dev1/sesi 12/UnitTesting/UnitTesting.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/raradanniswaramusin/Desktop/intern-OCBC/BackEnd Dev1/sesi 12/UnitTesting/UnitTesting.csproj",
+        "projectName": "UnitTesting",
+        "projectPath": "/Users/raradanniswaramusin/Desktop/intern-OCBC/BackEnd Dev1/sesi 12/UnitTesting/UnitTesting.csproj",
+        "packagesPath": "/Users/raradanniswaramusin/.nuget/packages/",
+        "outputPath": "/Users/raradanniswaramusin/Desktop/intern-OCBC/BackEnd Dev1/sesi 12/UnitTesting/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/raradanniswaramusin/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/Users/raradanniswaramusin/Desktop/intern-OCBC/BackEnd Dev1/sesi 12/Unit_Test_Mock_MySql/Unit_Test_Mock_MySql.csproj": {
+                "projectPath": "/Users/raradanniswaramusin/Desktop/intern-OCBC/BackEnd Dev1/sesi 12/Unit_Test_Mock_MySql/Unit_Test_Mock_MySql.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.9.4, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.16.1, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.402/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/raradanniswaramusin/Desktop/intern-OCBC/BackEnd Dev1/sesi 12/Unit_Test_Mock_MySql/Unit_Test_Mock_MySql.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/raradanniswaramusin/Desktop/intern-OCBC/BackEnd Dev1/sesi 12/Unit_Test_Mock_MySql/Unit_Test_Mock_MySql.csproj",
+        "projectName": "Unit_Test_Mock_MySql",
+        "projectPath": "/Users/raradanniswaramusin/Desktop/intern-OCBC/BackEnd Dev1/sesi 12/Unit_Test_Mock_MySql/Unit_Test_Mock_MySql.csproj",
+        "packagesPath": "/Users/raradanniswaramusin/.nuget/packages/",
+        "outputPath": "/Users/raradanniswaramusin/Desktop/intern-OCBC/BackEnd Dev1/sesi 12/Unit_Test_Mock_MySql/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/raradanniswaramusin/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.26, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.402/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
