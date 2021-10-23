@@ -12,9 +12,9 @@ namespace apiPayment.Migrations
                 name: "AspNetRoles",
                 columns: table => new
                 {
-                    Id = table.Column<string>(type: "varchar(767)", nullable: false),
+                    Id = table.Column<string>(type: "varchar(85)", maxLength: 85, nullable: false),
                     Name = table.Column<string>(type: "varchar(256)", maxLength: 256, nullable: true),
-                    NormalizedName = table.Column<string>(type: "varchar(256)", maxLength: 256, nullable: true),
+                    NormalizedName = table.Column<string>(type: "varchar(85)", maxLength: 85, nullable: true),
                     ConcurrencyStamp = table.Column<string>(type: "text", nullable: true)
                 },
                 constraints: table =>
@@ -26,11 +26,11 @@ namespace apiPayment.Migrations
                 name: "AspNetUsers",
                 columns: table => new
                 {
-                    Id = table.Column<string>(type: "varchar(767)", nullable: false),
+                    Id = table.Column<string>(type: "varchar(85)", maxLength: 85, nullable: false),
                     UserName = table.Column<string>(type: "varchar(256)", maxLength: 256, nullable: true),
-                    NormalizedUserName = table.Column<string>(type: "varchar(256)", maxLength: 256, nullable: true),
+                    NormalizedUserName = table.Column<string>(type: "varchar(85)", maxLength: 85, nullable: true),
                     Email = table.Column<string>(type: "varchar(256)", maxLength: 256, nullable: true),
-                    NormalizedEmail = table.Column<string>(type: "varchar(256)", maxLength: 256, nullable: true),
+                    NormalizedEmail = table.Column<string>(type: "varchar(85)", maxLength: 85, nullable: true),
                     EmailConfirmed = table.Column<bool>(type: "tinyint(1)", nullable: false),
                     PasswordHash = table.Column<string>(type: "text", nullable: true),
                     SecurityStamp = table.Column<string>(type: "text", nullable: true),
@@ -67,9 +67,9 @@ namespace apiPayment.Migrations
                 name: "AspNetRoleClaims",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<int>(type: "int", maxLength: 85, nullable: false)
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
-                    RoleId = table.Column<string>(type: "varchar(767)", nullable: false),
+                    RoleId = table.Column<string>(type: "varchar(85)", maxLength: 85, nullable: false),
                     ClaimType = table.Column<string>(type: "text", nullable: true),
                     ClaimValue = table.Column<string>(type: "text", nullable: true)
                 },
@@ -88,9 +88,9 @@ namespace apiPayment.Migrations
                 name: "AspNetUserClaims",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<int>(type: "int", maxLength: 85, nullable: false)
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
-                    UserId = table.Column<string>(type: "varchar(767)", nullable: false),
+                    UserId = table.Column<string>(type: "varchar(85)", maxLength: 85, nullable: false),
                     ClaimType = table.Column<string>(type: "text", nullable: true),
                     ClaimValue = table.Column<string>(type: "text", nullable: true)
                 },
@@ -109,10 +109,10 @@ namespace apiPayment.Migrations
                 name: "AspNetUserLogins",
                 columns: table => new
                 {
-                    LoginProvider = table.Column<string>(type: "varchar(767)", nullable: false),
-                    ProviderKey = table.Column<string>(type: "varchar(767)", nullable: false),
+                    LoginProvider = table.Column<string>(type: "varchar(85)", maxLength: 85, nullable: false),
+                    ProviderKey = table.Column<string>(type: "varchar(85)", maxLength: 85, nullable: false),
                     ProviderDisplayName = table.Column<string>(type: "text", nullable: true),
-                    UserId = table.Column<string>(type: "varchar(767)", nullable: false)
+                    UserId = table.Column<string>(type: "varchar(85)", maxLength: 85, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -129,8 +129,8 @@ namespace apiPayment.Migrations
                 name: "AspNetUserRoles",
                 columns: table => new
                 {
-                    UserId = table.Column<string>(type: "varchar(767)", nullable: false),
-                    RoleId = table.Column<string>(type: "varchar(767)", nullable: false)
+                    UserId = table.Column<string>(type: "varchar(85)", maxLength: 85, nullable: false),
+                    RoleId = table.Column<string>(type: "varchar(85)", maxLength: 85, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -153,9 +153,9 @@ namespace apiPayment.Migrations
                 name: "AspNetUserTokens",
                 columns: table => new
                 {
-                    UserId = table.Column<string>(type: "varchar(767)", nullable: false),
-                    LoginProvider = table.Column<string>(type: "varchar(767)", nullable: false),
-                    Name = table.Column<string>(type: "varchar(767)", nullable: false),
+                    UserId = table.Column<string>(type: "varchar(85)", maxLength: 85, nullable: false),
+                    LoginProvider = table.Column<string>(type: "varchar(85)", maxLength: 85, nullable: false),
+                    Name = table.Column<string>(type: "varchar(85)", maxLength: 85, nullable: false),
                     Value = table.Column<string>(type: "text", nullable: true)
                 },
                 constraints: table =>

@@ -1,0 +1,10 @@
+/Users/raradanniswaramusin/Desktop/intern-OCBC/Api_Deployment/bin/Release/net5.0/publish/appsettings.Development.json
+/Users/raradanniswaramusin/Desktop/intern-OCBC/Api_Deployment/bin/Release/net5.0/publish/appsettings.json
+/Users/raradanniswaramusin/Desktop/intern-OCBC/Api_Deployment/bin/Release/net5.0/publish/Api_Deployment.dll
+/Users/raradanniswaramusin/Desktop/intern-OCBC/Api_Deployment/bin/Release/net5.0/publish/Api_Deployment.deps.json
+/Users/raradanniswaramusin/Desktop/intern-OCBC/Api_Deployment/bin/Release/net5.0/publish/Api_Deployment.runtimeconfig.json
+/Users/raradanniswaramusin/Desktop/intern-OCBC/Api_Deployment/bin/Release/net5.0/publish/Api_Deployment.pdb
+/Users/raradanniswaramusin/Desktop/intern-OCBC/Api_Deployment/bin/Release/net5.0/publish/Microsoft.OpenApi.dll
+/Users/raradanniswaramusin/Desktop/intern-OCBC/Api_Deployment/bin/Release/net5.0/publish/Swashbuckle.AspNetCore.Swagger.dll
+/Users/raradanniswaramusin/Desktop/intern-OCBC/Api_Deployment/bin/Release/net5.0/publish/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/raradanniswaramusin/Desktop/intern-OCBC/Api_Deployment/bin/Release/net5.0/publish/Swashbuckle.AspNetCore.SwaggerUI.dll

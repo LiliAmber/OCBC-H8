@@ -9,8 +9,8 @@ using Payment.Data;
 namespace apiPayment.Migrations
 {
     [DbContext(typeof(ApiDbContext))]
-    [Migration("20211021040247_initial migrate")]
-    partial class initialmigrate
+    [Migration("20211021092936_Added refresh tokens")]
+    partial class Addedrefreshtokens
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -22,7 +22,8 @@ namespace apiPayment.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
-                        .HasColumnType("varchar(767)");
+                        .HasMaxLength(85)
+                        .HasColumnType("varchar(85)");
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
@@ -33,8 +34,8 @@ namespace apiPayment.Migrations
                         .HasColumnType("varchar(256)");
 
                     b.Property<string>("NormalizedName")
-                        .HasMaxLength(256)
-                        .HasColumnType("varchar(256)");
+                        .HasMaxLength(85)
+                        .HasColumnType("varchar(85)");
 
                     b.HasKey("Id");
 
@@ -49,6 +50,7 @@ namespace apiPayment.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
+                        .HasMaxLength(85)
                         .HasColumnType("int");
 
                     b.Property<string>("ClaimType")
@@ -59,7 +61,8 @@ namespace apiPayment.Migrations
 
                     b.Property<string>("RoleId")
                         .IsRequired()
-                        .HasColumnType("varchar(767)");
+                        .HasMaxLength(85)
+                        .HasColumnType("varchar(85)");
 
                     b.HasKey("Id");
 
@@ -71,7 +74,8 @@ namespace apiPayment.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUser", b =>
                 {
                     b.Property<string>("Id")
-                        .HasColumnType("varchar(767)");
+                        .HasMaxLength(85)
+                        .HasColumnType("varchar(85)");
 
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
@@ -94,12 +98,12 @@ namespace apiPayment.Migrations
                         .HasColumnType("timestamp");
 
                     b.Property<string>("NormalizedEmail")
-                        .HasMaxLength(256)
-                        .HasColumnType("varchar(256)");
+                        .HasMaxLength(85)
+                        .HasColumnType("varchar(85)");
 
                     b.Property<string>("NormalizedUserName")
-                        .HasMaxLength(256)
-                        .HasColumnType("varchar(256)");
+                        .HasMaxLength(85)
+                        .HasColumnType("varchar(85)");
 
                     b.Property<string>("PasswordHash")
                         .HasColumnType("text");
@@ -136,6 +140,7 @@ namespace apiPayment.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
+                        .HasMaxLength(85)
                         .HasColumnType("int");
 
                     b.Property<string>("ClaimType")
@@ -146,7 +151,8 @@ namespace apiPayment.Migrations
 
                     b.Property<string>("UserId")
                         .IsRequired()
-                        .HasColumnType("varchar(767)");
+                        .HasMaxLength(85)
+                        .HasColumnType("varchar(85)");
 
                     b.HasKey("Id");
 
@@ -158,17 +164,20 @@ namespace apiPayment.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .HasColumnType("varchar(767)");
+                        .HasMaxLength(85)
+                        .HasColumnType("varchar(85)");
 
                     b.Property<string>("ProviderKey")
-                        .HasColumnType("varchar(767)");
+                        .HasMaxLength(85)
+                        .HasColumnType("varchar(85)");
 
                     b.Property<string>("ProviderDisplayName")
                         .HasColumnType("text");
 
                     b.Property<string>("UserId")
                         .IsRequired()
-                        .HasColumnType("varchar(767)");
+                        .HasMaxLength(85)
+                        .HasColumnType("varchar(85)");
 
                     b.HasKey("LoginProvider", "ProviderKey");
 
@@ -180,10 +189,12 @@ namespace apiPayment.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
                 {
                     b.Property<string>("UserId")
-                        .HasColumnType("varchar(767)");
+                        .HasMaxLength(85)
+                        .HasColumnType("varchar(85)");
 
                     b.Property<string>("RoleId")
-                        .HasColumnType("varchar(767)");
+                        .HasMaxLength(85)
+                        .HasColumnType("varchar(85)");
 
                     b.HasKey("UserId", "RoleId");
 
@@ -195,13 +206,16 @@ namespace apiPayment.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
                     b.Property<string>("UserId")
-                        .HasColumnType("varchar(767)");
+                        .HasMaxLength(85)
+                        .HasColumnType("varchar(85)");
 
                     b.Property<string>("LoginProvider")
-                        .HasColumnType("varchar(767)");
+                        .HasMaxLength(85)
+                        .HasColumnType("varchar(85)");
 
                     b.Property<string>("Name")
-                        .HasColumnType("varchar(767)");
+                        .HasMaxLength(85)
+                        .HasColumnType("varchar(85)");
 
                     b.Property<string>("Value")
                         .HasColumnType("text");
@@ -232,6 +246,37 @@ namespace apiPayment.Migrations
                     b.HasKey("paymentDetailId");
 
                     b.ToTable("Payments");
+                });
+
+            modelBuilder.Entity("PaymentJWTRefreshToken.Models.RefreshToken", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("AddedDate")
+                        .HasColumnType("datetime");
+
+                    b.Property<DateTime>("ExpiryDate")
+                        .HasColumnType("datetime");
+
+                    b.Property<bool>("IsUsed")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<string>("JwtId")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Token")
+                        .HasColumnType("text");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("varchar(85)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("RefreshTokens");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -283,6 +328,15 @@ namespace apiPayment.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("PaymentJWTRefreshToken.Models.RefreshToken", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("User");
                 });
 #pragma warning restore 612, 618
         }

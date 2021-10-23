@@ -14,34 +14,11 @@ namespace Payment.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    //==auth process==
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
 
     public class PaymentController : ControllerBase
     {
-        // #region Property
-        // private readonly IPaymentService _paymentService;
-        // #endregion
-
-        // #region Constructor
-        // public PaymentController(IPaymentService paymentService)
-        // {
-        //     _paymentService = paymentService;
-        // }
-        // #endregion
-
-        // [HttpGet(nameof(GetPaymentById))]
-        // public async Task<string> GetPaymentById(int PayID)
-        // {
-        //     var result = await _paymentService.GetPaymentById(PayID);
-        //     return result;
-        // }
-
-        // [HttpGet(nameof(GetPaymentDetails))]
-        // public async Task<ItemData> GetPaymentDetails(int PayID)
-        // {
-        //     var result = await _paymentService.GetPaymentDetails(PayID);
-        //     return result;
-        // }
-
         //==tryin mysql without services===
         private readonly ApiDbContext _context;
         public PaymentController(ApiDbContext context) {
@@ -72,7 +49,8 @@ namespace Payment.Controllers
                 await _context.Payments.AddAsync(data);
                 await _context.SaveChangesAsync();
 
-                return CreatedAtAction(nameof(GetPaymentDetailsById), new {data.paymentDetailId}, data);
+                // return CreatedAtAction(nameof(GetPaymentDetailsById), new {data.paymentDetailId}, data);
+                return Ok("Successfully create a new payment details, please check your database");
             }
 
             return new JsonResult("Something went wrong") {StatusCode = 500};
@@ -98,7 +76,7 @@ namespace Payment.Controllers
             await _context.SaveChangesAsync();
 
             // return NoContent();
-            return Ok("Successfully update payment details");
+            return Ok("Successfully update selected payment details");
         }
 
         [HttpDelete("{id}")]
@@ -114,7 +92,7 @@ namespace Payment.Controllers
 
             //==respon disini==
             // return Ok(existItem);
-            return Ok("Successfully delete payment details");
+            return Ok("Successfully delete selected payment details");
         }
     }
 }
