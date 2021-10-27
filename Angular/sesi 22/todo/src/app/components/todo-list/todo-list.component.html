@@ -34,7 +34,7 @@
             <i class="bi bi-check-circle"></i>
         </button>
 
-        <button *ngIf="!todo.editing" class="mx-2 btn btn-success btn-sm">
+        <button *ngIf="!todo.editing && !todo.completed" class="mx-2 btn btn-success btn-sm">
             <i class="bi bi-pen" (click)="editTodoTrigger(todo)"></i>
         </button>
 
