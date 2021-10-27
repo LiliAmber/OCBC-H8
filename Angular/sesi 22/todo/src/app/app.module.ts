@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { TodoListComponent } from './components/todo-list/todo-list.component';
 import { AddTodoFormComponent } from './components/add-todo-form/add-todo-form.component';
-import { EditTodoFormComponent } from './components/edit-todo-form/edit-todo-form.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +13,6 @@ import { EditTodoFormComponent } from './components/edit-todo-form/edit-todo-for
     NavbarComponent,
     TodoListComponent,
     AddTodoFormComponent,
-    EditTodoFormComponent,
   ],
   imports: [
     BrowserModule,
