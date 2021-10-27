@@ -1,4 +1,4 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Todo } from 'src/app/Models/Todo';
 
 @Component({
@@ -9,7 +9,9 @@ import { Todo } from 'src/app/Models/Todo';
 export class TodoListComponent implements OnInit {
 
   todos: Todo[] = []
-  
+  @Output() newEditTodoEvent = new EventEmitter()
+  editTodo: string = ''
+
   constructor() { }
 
   //==sama kaya created di vue==
@@ -63,4 +65,16 @@ export class TodoListComponent implements OnInit {
     console.log("aku di klik")
   }
 
+  updateTodo(updTodo: Todo) {
+    console.log(updTodo, "<<<edit")
+    updTodo.content = this.editTodo
+    console.log(this.editTodo, '<<<after edit')
+    if(updTodo.content) {
+      updTodo.content = this.editTodo
+      updTodo.completed = false
+      updTodo.editing = false
+    }
+    this.newEditTodoEvent.emit(updTodo)
+    this.editTodo = ''
+  }
 }

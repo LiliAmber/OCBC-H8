@@ -7,19 +7,14 @@ import { Todo } from 'src/app/Models/Todo';
   styleUrls: ['./edit-todo-form.component.css']
 })
 export class EditTodoFormComponent implements OnInit {
-  @Output() newEditTodoEvent = new EventEmitter()
-  editTodo: string = ''
+  
 
-  updateTodo() {
-    console.log("aku di trigger")
-    const editTodo: Todo = {
-      content: this.editTodo,
-      completed: false
-    };
-    this.newEditTodoEvent.emit(editTodo)
-    this.editTodo = ''
-  }
+  
 
+  // editTodoTrigger(todo: Todo) {
+  //   todo.editing = true
+  //   console.log("aku di klik")
+  // }
   constructor() { }
 
   ngOnInit(): void {

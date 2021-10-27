@@ -9,7 +9,23 @@
                 {{i + 1}}. {{todo.content}}
             </div>
             <div *ngIf="todo.editing">
-                <app-edit-todo-form (newEditTodoEvent)="updateTodo($event)"></app-edit-todo-form>
+                <form>
+                    <div class="input-group mb-3">
+                        <input 
+                            type="text"
+                            value=""
+                            name="inputTodo"
+                            placeholder="{{todo.content}}"
+                            class="form-control mx-2"
+                            [(ngModel)]="editTodo"
+                        />
+                        <button 
+                            type="submit"
+                            class="btn btn-primary btn-sm mx-2"
+                            (click)="updateTodo(todo)"
+                        ><i class="bi bi-pen"></i></button>
+                    </div>
+                </form>
             </div>
         </div>
 
