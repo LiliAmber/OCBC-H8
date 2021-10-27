@@ -1,0 +1,22 @@
+<div>
+  <h1>Interpolation and Template Expressions</h1>
+  <hr>
+
+  <div>
+    <h2>Interpolation Example</h2>
+    <h3>Current Customer: {{currentCustomer}}</h3>
+
+    <p>{{title}}</p>
+    <div>
+      <p><img src="{{itemImageUrl}}" alt="nice picture"> is the <i>interpolated</i> image</p>
+      <hr>
+      <p><img [src]="itemImageUrl" alt="nice picture"> is the <i>property bound</i> image</p>
+    </div>
+  </div>
+
+  <h1>Two-way Binding</h1>
+  <div id="two-way-1">
+    <p>{{message}}</p>
+    <label>Masukkan Pesan: <input [(ngModel)] = "message"/></label>
+  </div>
+</div>

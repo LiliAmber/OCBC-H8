@@ -1,0 +1,12 @@
+
+<h1>TEST ANGULAR</h1>
+<app-header></app-header>
+<app-aside></app-aside>
+<!--eventHandler nya ke trigger oleh event click di button children(button.component.html)-->
+<app-button (eventHandler) = "eventCounter()" [name] = "title"></app-button>
+<p>this button clicked {{counter}} times</p>
+
+<ul>
+  <li *ngFor="let item of items">{{item}}</li>
+</ul>
+<app-item (newItemEvent) = "addItemInParent($event)"></app-item>

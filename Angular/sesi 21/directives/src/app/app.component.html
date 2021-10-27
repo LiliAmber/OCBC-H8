@@ -1,0 +1,90 @@
+<ng-template [ngIf] = "currentUser">
+  <h2>NgIf with template</h2>
+  <div>
+    {{currentUser.username}}
+  </div>
+</ng-template>
+
+<h2>ngIfComponent</h2>
+<app-item-list *ngIf = "isActive" [hero] = "heroes[1]"></app-item-list>
+
+<h2 id="ngFor">ngFor Heroes</h2>
+<div class="box">
+  <div *ngFor= "let hero of heroes">{{hero.id}}. {{hero.name}}</div>
+</div>
+
+<h2 id="ngFor">template ngForOf Heroes</h2>
+<ng-template ngFor let-hero [ngForOf] = "heroes" let-i = "index">
+  <div>{{i + 1}}. {{hero.name}}</div>
+  <div>emotion: {{hero.emotion ? hero.emotion: '-'}}</div>
+</ng-template>
+
+<h2 id="ngFor">ngFor Component</h2>
+<app-item-list *ngFor = "let hero of heroes" [hero] = "hero"></app-item-list>
+
+<h2>Using ngIf</h2>
+<ul *ngFor = "let person of people">
+  <li *ngIf = "person.country === 'UK'" class="text-blue">
+    {{person.name}} ({{person.country}})
+  </li>
+  <li *ngIf = "person.country === 'USA'" class="text-red">
+    {{person.name}} ({{person.country}})
+  </li>
+  <li *ngIf = "person.country === 'HK'" class="text-green">
+    {{person.name}} ({{person.country}})
+  </li>
+  <li *ngIf = "person.country !== 'UK' && person.country !== 'HK' && person.country !== 'USA'">
+    {{person.name}} ({{person.country}})
+  </li>
+</ul>
+<hr>
+
+<h2>using ngSwitch</h2>
+<ul *ngFor = "let person of people" [ngSwitch] = "person.country">
+  <li *ngSwitchCase = "'UK'" class="text-blue">
+    {{person.name}} ({{person.country}})
+  </li>
+  <li *ngSwitchCase = "'USA'" class="text-red">
+    {{person.name}} ({{person.country}})
+  </li>
+  <li *ngSwitchCase = "'HK'" class="text-green">
+    {{person.name}} ({{person.country}})
+  </li>
+  <li *ngSwitchDefault>
+    {{person.name}} ({{person.country}})
+  </li>
+</ul>
+<hr>
+
+<h2>one liner tanpa css</h2>
+<ul>
+  <li *ngFor="let person of people" [ngStyle]="{'color': (person.country === 'USA') ? 'red' : (person.country === 'HK') ? 'blue' : (person.country === 'MARS') ? 'green' : ''}">
+      {{person.name}} ({{person.country}})
+  </li>
+</ul>
+<hr>
+
+<h2>one liner dengan css</h2>
+<ul>
+  <li *ngFor="let person of people" [ngStyle]="{'color': (person.country === 'USA') ? 'red' : (person.country === 'HK') ? 'blue' : (person.country === 'MARS') ? 'green' : ''}">
+    {{person.name}} ({{person.country}})
+  </li>
+</ul>
+<hr>
+
+<h2>angular pipe</h2>
+<h3>{{currentDate | date: 'dd MMM YYY'}}</h3>
+<hr>
+
+<h2>angular pipe chaining(2)</h2>
+<h3>{{currentDate | date: 'dd MMMM YYYY' | uppercase}}</h3>
+<hr>
+
+<h2>Heroes display with json pipe</h2>
+<p>{{heroes | json}}</p>
+<hr>
+
+<h2>Custom pipe</h2>
+<p>{{129392 | fileSize}}</p>
+<p>{{50000000 | fileSize: 'GB'}}</p>
+<hr>
