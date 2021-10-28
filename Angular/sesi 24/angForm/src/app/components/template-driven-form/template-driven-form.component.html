@@ -1,0 +1,38 @@
+<!-- <p>template-driven-form works!</p> -->
+
+<form (ngSubmit)="onSubmit(todoForm)" #todoForm="ngForm" class="container">
+    <div class="form-group">
+        <label for="name">Task Name</label>
+        <input 
+            type="text" 
+            class="form-control" 
+            id="taskName" 
+            name="taskName" 
+            ngModel
+            required
+            #taskName="ngModel" 
+        >
+        <div class="alert alert-danger" [hidden]="taskName.valid || taskName.pristine">
+            task is required
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="category">Category</label>
+        <select class="form-control" name="category" id="category" ngModel required #category="ngModel">
+            <option value="">---category here---</option>
+            <option *ngFor="let category of categories" [value]="category">{{category}}</option>
+        </select>
+
+        <div class="alert alert-danger" [hidden]="category.valid || category.pristine">
+            pick a category please !
+        </div>
+    </div>
+    <button type="submit" class="btn btn-success" [disabled]="!todoForm.form.valid">Submit</button>
+</form>
+
+<ul>
+    <li *ngFor="let task of tasks">
+        {{task.category}} => {{task.task}} => {{task.status}}
+    </li>
+</ul>

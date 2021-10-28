@@ -1,0 +1,30 @@
+<!-- <p>add-todo-form works!</p> -->
+<!-- <p>add-todo-form works!</p> -->
+<form [formGroup]="addForm" (ngSubmit)="addTodo()">
+    <div class="input-group mb-3">
+        <input 
+            type="text"
+            class="form-control mx-2"
+            id="content"
+            name="content"
+            formControlName="content"
+            placeholder="Enter todo ..."
+        />
+
+        <button 
+            type="submit"
+            class="btn btn-primary mx-2"
+        >Add Todo</button>
+
+        <div *ngIf="content?.invalid">
+            <p *ngIf="content?.errors?.required">
+                <i class="badge rounded-pill bg-danger">content is required</i>
+            </p>
+            
+            <p *ngIf="content?.errors?.minlength">
+                <i class="badge rounded-pill bg-warning text-dark">minimal char {{content?.errors?.minlength?.requiredLength}}</i>
+            </p>
+        </div>
+        
+    </div>
+</form>

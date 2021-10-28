@@ -1,0 +1,49 @@
+<!-- <p>reactive-form works!</p> -->
+<h1 class="container mt-5 text-cennter">Login Form</h1>
+
+<form [formGroup]="loginForm" (ngSubmit)="onLogin()" class="container">
+    <div class="form-group">
+        <label for="username">username</label>
+        <input 
+            type="text"
+            class="form-control"
+            id="username"
+            name="username"
+            formControlName="username"
+            (change)="handleIsSubmittedState()"
+        >
+        <!-- <span *ngIf="isSubmitted && username && username.invalid">Invalid Username</span> -->
+
+        <div *ngIf="username?.invalid">
+            <span *ngIf="username?.errors?.required">
+                Name is required.
+            </span>
+            
+            <span *ngIf="username?.errors?.minlength">
+                minimal char {{username?.errors?.minlength?.requiredLength}}
+            </span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input 
+            type="password"
+            class="form-control"
+            id="password"
+            name="password"
+            formControlName="password"
+        >
+        <div *ngIf="password?.invalid">
+    
+            <span *ngIf="password?.errors?.required">
+                Invalid password
+            </span>
+            
+        </div>
+    </div>
+    <button type="submit" class="btn btn-success">Login</button>
+</form>
+
+<div *ngIf="currentUser.isLogin" class="container alert alert-success mt-5">
+    Successfully Login. Hello, {{currentUser.username}}
+</div>

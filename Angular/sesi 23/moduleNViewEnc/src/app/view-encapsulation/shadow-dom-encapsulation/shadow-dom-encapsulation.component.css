@@ -1,0 +1,8 @@
+div.shadowDom {
+    color: blue;
+    border: blue solid 1px;
+}
+
+h2,p {
+    color: blue;
+}
