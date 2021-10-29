@@ -1,0 +1,39 @@
+
+<div class="container">
+    <p>products works!</p>
+
+    <div class="row">
+        <div class="col-sm-4" *ngFor="let product of products1">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        {{product.name}}
+                    </h5>
+                    <p class="card-text">{{product.description}}</p>
+                    <a [routerLink]="['/products/', product.id]" class="btn btn-danger">Check Product</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <table class="table table-striped mt-5">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Code</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products">
+                <th>{{product.id}}</th>
+                <th>{{product.code}}</th>
+                <th>{{product.name}}</th>
+                <th>{{product.price}}</th>
+                <th><a [routerLink]="['/products/', product.id]" class="btn btn-danger">Check Product</a></th>
+            </tr>
+        </tbody>
+    </table>
+</div>
