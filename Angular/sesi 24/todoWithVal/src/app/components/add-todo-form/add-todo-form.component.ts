@@ -10,15 +10,7 @@ import { Todo } from 'src/app/Model/Todo';
 export class AddTodoFormComponent implements OnInit {
   @Output() newTodoEvent = new EventEmitter()
   inputTodo: string = ''
-
-  // addTodo() {
-  //   const todo: Todo = {
-  //     content: this.inputTodo,
-  //     completed: false
-  //   };
-  //   this.newTodoEvent.emit(todo)
-  //   this.inputTodo = ''
-  // }
+  isSubmitted: boolean = false
 
   todo: Todo = {
     completed: false,
@@ -38,8 +30,22 @@ export class AddTodoFormComponent implements OnInit {
   }
 
   addTodo() {
-    console.log(this.addForm)
+    // this.handleIsSubmittedState(true)
+
+    this.todo = {
+      completed: false,
+      editing: false,
+      content: this.addForm.value.content
+    }
+    
+    this.newTodoEvent.emit(this.todo)
+    this.addForm.reset()
   }
+
+  // handleIsSubmittedState(val: boolean) {
+  //   this.isSubmitted = val
+  // }
+
   constructor() { }
 
   ngOnInit(): void {

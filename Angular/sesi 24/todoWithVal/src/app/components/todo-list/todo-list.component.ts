@@ -75,6 +75,8 @@ export class TodoListComponent implements OnInit {
 
   addTodo(todo: Todo) {
     this.todos.push(todo)
+    // console.log("aku ke trigger")
+    // console.log(this.todos, '<<<<arr todos')
   }
   
   editTodoTrigger(todo: Todo) {
