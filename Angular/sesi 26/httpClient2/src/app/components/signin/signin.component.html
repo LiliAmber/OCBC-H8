@@ -1,0 +1,25 @@
+<!-- <p>signin works!</p> -->
+<!-- <p>signup works!</p> -->
+<div class="auth-wrapper">
+    <form [formGroup]="signinForm" (ngSubmit)="signIn()">
+        <h3 class="h3 mb-3 font-weight-normal text-center">Please sign up</h3>
+
+        <div class="form-group mt-3">
+            <label for="email">Email Address</label>
+            <input type="email" class="form-control" formControlName="email" placeholder="Enter email" required>
+            <span style="color: red;"
+                *ngIf="email && email.touched && email.invalid"
+            >Email is required. Min Length is 5</span>
+        </div>
+
+        <div class="form-group mt-3">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" formControlName="password" placeholder="Enter password" required>
+            <span style="color: red;"
+                *ngIf="password && password.touched && password.invalid"
+            >Password is required. Min Length is 5</span>
+        </div>
+
+        <button type="submit" class="btn btn-block btn-primary mt-3">Sign in</button>
+    </form>
+</div> 
