@@ -4,7 +4,7 @@ b = 3
 print(a ** 3)
 print('======')
 
-#pyton dictionary
+#python dictionary
 MLB_team = {    
     'Colorado': 'Rockies',    
     'Boston': 'Red Sox',    

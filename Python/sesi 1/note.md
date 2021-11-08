@@ -1,6 +1,6 @@
 # Buat venv baru
 ```
-python -m venv (nama file)
+python3 -m venv (nama file)
 ```
 akan meng generate folder bin, include, lib dan filee pyvenv.cfg
 
