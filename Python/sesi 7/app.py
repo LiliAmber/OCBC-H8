@@ -1,14 +1,14 @@
 from markupsafe import escape
-from flask import Flask
-from flask import request
-from flask import render_template
+from flask import Flask, request, render_template
+# from flask import request
+# from flask import render_template
+import webbrowser
+from authorBook import author_book
 
 # instance dari Flask
 app = Flask(__name__)
 
 # @app.route('/endpoints name') => decorator bawaan dari flask
-@app.route('/books')
-@app.route('/movies')
 @app.route('/')
 
 def hello_world():
@@ -59,7 +59,22 @@ def login():
 def hello(name=None):
     return render_template('hello.html', name=name)
 
+@app.route('/author', methods=["GET", "POST"])
+def author():
+    if 'author_id' in request.form:
+        author_book[request.form['author_id']] = []
+
+    return render_template('author.html', author_book = author_book)
+
+@app.route('/books/<int:author_id>')
+def books(author_id):
+    return render_template('book.html',  id = author_id)
+
+@app.route('/book/<int:author_id>')
+def books1(author_id):
+    return render_template('book1.html',  authorId = author_id, bookList = author_book[author_id])
 # apakah dijalankan sebagai stand alone script
 if __name__ == '__main__':
     # debug = True --> digunakan supaya auto reload app.py tanpa terminate proses di app.py, tpi yg di browser harus tetep di refresh untuk liat perubahan yg udah dilakukan di app.py
+    webbrowser.open('http://127.0.0.1:5000/')
     app.run(debug = True)
