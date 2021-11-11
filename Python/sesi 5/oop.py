@@ -64,7 +64,7 @@ class Dog():
 # print(buddy.name)
 # print(buddy.age)
 
-# inheritance from other classes in python
+# ===inheritance from other classes in python==
 
 # parent
 class Mom():
@@ -85,3 +85,36 @@ print(f"{mom.name}'s hair color is {mom.hair_color}")
 
 first_daughter = Children('ina', 'ungu', 22)
 print(f"{first_daughter.name}'s hair color is {first_daughter.hair_color} and she is {first_daughter.age} years old")
+
+class Dog1:
+    species = "Canis familiaris"
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def __str__(self):
+        return f"{self.name} is {self.age} years old"
+
+    def speak(self, sound):
+        return f"{self.name} says {sound}"
+
+
+class JackRussellTerrier(Dog1):
+    def speak(self, sound="Arf"):
+        return f"{self.name} says {sound}"
+    # pass
+
+class Dachshund(Dog1):
+    pass
+
+class Bulldog(Dog1):
+    pass
+
+jack = Bulldog("Jack", 3)
+print(jack)
+
+# Extend the Functionality of a Parent Class
+miles = JackRussellTerrier("Miles", 4)
+print(miles.speak())
+print(miles.speak("Grrr"))
